@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Tikka</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="src/style2.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="tikka.html">
+            <h2>NEW TIKKA</h2>
+        </a>
+        <div class="right_nav">
+            <div class="topnav" id="myLinks">
+                <a href="#about"><p>About</p></a>
+                <a href="#menu"><p>Menu</p></a>
+                <a href="cart.html">
+                    <div class="cart">
+                        <i class="bi bi-cart2"></i>
+                        <div class="cart_num" id="cartnum">0</div>
+                    </div>
+                </a>
+            </div>
+            <i class="bi bi-list" onclick="myFunction()"></i>
+        </div>
+    </div>
+    <div class="intro">
+        <img src="assets/tikka_pic.jpg" alt="">
+        <div class="content">
+            <h2>Welcome to Tikka!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ab nulla voluptatem et mollitia, sit doloremque, omnis dolorem porro delectus quibusdam quidem est incidunt illo atque quas</p>
+        </div>
+    </div>
+    <hr class="divide">
+    <div class="about">
+        
+        <h2>About us</h2>
+        <div class="about_info">
+            <div>
+                <div class="location">
+                    <p>Location : </p>
+                    <p>Tikka,IIT MAIN ROAD</p>
+                </div>
+                <div class="telephone">
+                    <p>Contact us : </p>
+                    <p>1234567890</p>
+                </div>
+            </div>
+        </div>
+        <div class="about_photos">
+
+        </div>
+    </div>
+    <hr class="divide">
+    <div class="menu" id="menu">
+        <h2>MENU</h2>
+        <div class="items">
+            <div class="left" id="left"></div>
+            <div class="right" id="right"></div> 
+        </div>
+    </div>
+    <div class="footer">
+        <div>TIKKA</div>
+        <div class="social">
+            <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com"><i class="bi bi-instagram"></i></a>
+        </div>
+    </div>
+</body>
+<script>
+    function myFunction() {
+  let x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<script src="src/data.js"></script>
+<script src="src/script.js"></script>
+</html>

@@ -1,0 +1,314 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav{
+    color: white;
+    padding:2vw 0vw;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.nav > a{
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    margin:0vw 0vw 0vw 2vw;
+}
+.right_nav{
+    margin-right:2vw;
+    display: flex;
+}
+
+.right_nav a{
+    font-size: 2.25vw;
+    color: white;
+    text-decoration: none;
+}
+
+.right_nav a:hover{
+    color: orangered;
+}
+.nav p{
+    padding: 1vw 2vw;
+}
+
+.bi-list{
+    font-size: 5vw;
+    cursor: pointer;
+}
+
+.topnav{
+    display: none;
+    position: absolute;
+    top: 7vw;
+    right: 2vw;
+    background-color: #757474;
+}
+
+.topnav a:hover{
+    color: orangered;
+}
+
+.bi-cart2{
+    cursor: pointer;
+    padding: 0vw 3vw;
+    font-size: 4vw;
+    color: white;
+}
+
+.cart{
+    position: relative;
+}
+.cart_num{
+    position: absolute;
+    top:0vw;
+    right: 1.5vw;
+    font-size: 2vw;
+    border-radius:1vw;
+    padding:0.5vw;
+    font-weight: 600;
+    color:white;
+    background-color: orangered;
+}
+
+
+/*intro section*/
+.intro {
+    background-color: #f9f6f6;
+    display: flex;
+}
+
+.intro img{
+    width:45vw;
+    height: 30vw;
+    margin: 3vw;
+}
+
+.content{
+    margin:7vw 5vw;
+}
+
+.content h2{
+    font-size: 3vw;
+    margin: 0vw 0vw 1vw 0vw;
+    color: rgb(0,0,0,0.75);
+}
+
+.content p{
+    color: #757474;
+    font-size: 2vw;
+    margin-bottom:5vw;
+}
+
+.content a{
+    text-decoration: none;
+    font-size: 2vw;
+    color: white;
+    background-color: orangered;
+    margin-left: 25vw;
+    border-radius: 1.5vw;
+    padding:1vw;
+}
+
+.location , .telephone{
+    display: flex;
+    font-size: 2vw;
+    justify-content: start;
+    padding: 1vw 0.5vw;
+    gap: 2vw;
+}
+
+
+/*about section*/
+.about{
+    background-color: #f9f6f6;
+}
+
+.about h2{
+    font-size: 3vw;
+}
+
+/*Menu*/
+
+.menu h2{
+    font-size: 3vw;
+}
+.items{
+    width:80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.item{
+    display: flex;
+    padding: 1vw 0vw;
+    margin:0vw 1vw;
+    align-items: center;
+}
+
+.left{
+    margin:2.5vw;
+    padding: 1vw 2.5vw;
+    border: 0.25vw rgb(0,0,0,0.5) dashed;
+}
+
+.right{
+    margin:2.5vw;
+    padding: 1vw 2.5vw;
+    border: 0.25vw rgb(0,0,0,0.5) dashed;
+}
+
+.buttons{
+    display: flex;
+    gap: 1vw;
+    font-size: 2vw;
+}
+
+.item h3{
+    font-size: 2vw;
+    width:20vw;
+}
+
+.price{
+    width:8vw;
+    font-size: 2vw;
+    font-weight: 450;
+}
+
+.bi-dash-lg{
+    font-size: 2vw;
+    cursor: pointer;
+    color: red;
+}
+
+.bi-plus-lg{
+    font-size: 2vw;
+    cursor: pointer;
+    color:green;
+}
+
+/*Cart page*/
+.cart-body{
+    background-color: #f9f6f6;
+}
+
+.text-center{
+    text-align: center;
+    margin: 4vw;
+}
+
+.empty{
+    font-size: 3vw;
+}
+.HomeBtn{
+    background-color: #757474;
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    margin:1.5vw;
+    font-size: 1.75vw;
+    cursor: pointer;
+}
+
+.cart-item{
+    border: 0.5vw solid #979696;
+    width:60vw;
+    margin: 2vw 20vw;
+    padding: 0vw 2vw 2vw 2vw;
+}
+
+.bi-x-lg{
+    font-size: 2vw;
+    color: red;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.title-price-x{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-price{
+    width:15vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-price p{
+    font-size: 2vw;
+}
+
+.quantity_total{
+    display: flex;
+}
+.cart-buttons{
+    margin-top: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-buttons h3{
+    font-size: 2vw;
+}
+
+.total{
+    font-size: 3vw;
+    margin: 2vw;
+}
+.checkout{
+    background-color: #2ecc71;
+    color: white;
+    font-size: 2vw;
+    padding: 1vw;
+    border: 0.25vw solid white;
+    border-radius: 1vw;
+    margin: 0vw 1vw;
+    cursor: pointer;
+}
+
+.removeAll{
+    background-color: red;
+    color: white;
+    font-size: 2vw;
+    padding: 1vw;
+    border: 0.25vw solid white;
+    border-radius: 1vw;
+    margin: 0vw 1vw;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #757474;
+}
+
+.social{
+    width:30vw;
+    margin: auto;
+}
+
+.footer >div{
+    font-size: 3vw;
+    text-align: center;
+    color: white;
+    padding: 1vw;
+}
+.bi-facebook, .bi-instagram{
+    cursor: pointer;
+   color: white;
+   font-size: 5vw; 
+   margin:2vw;
+}
